@@ -26,9 +26,14 @@ data = pandas.read_csv("weather_data.csv")
 # convert = monday.temp * 1.8 + 32
 #
 # print(convert)
-data_dict = {
-    "students": ["amy", "james", "angela"],
-    "scores": [76, 56, 65]
-}
-data = pandas.DataFrame(data_dict)
-print(data)
+# data_dict = {
+#     "students": ["amy", "james", "angela"],
+#     "scores": [76, 56, 65]
+# }
+# dataz = pandas.DataFrame(data_dict)
+# print(data)
+
+
+with open("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv", mode="r") as file:
+    dataz = pandas.DataFrame(file)
+    print(dataz)
